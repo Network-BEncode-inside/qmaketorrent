@@ -6,46 +6,45 @@
 
 QT       += core gui
 
-TARGET = qMakeTorrent
+TARGET = qmaketorrent
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
-        wizard.cpp \
-    intropage.cpp \
-    inputpage.cpp \
-    trackerspage.cpp \
-    propertiespage.cpp \
-    creationpage.cpp \
-    createtorrent.cpp \
-    outputpage.cpp \
-    summarypage.cpp
+SOURCES += src/main.cpp\
+        src/wizard.cpp \
+    src/intropage.cpp \
+    src/inputpage.cpp \
+    src/trackerspage.cpp \
+    src/propertiespage.cpp \
+    src/creationpage.cpp \
+    src/createtorrent.cpp \
+    src/outputpage.cpp \
+    src/summarypage.cpp
 
-HEADERS  += wizard.h \
-    intropage.h \
-    inputpage.h \
-    trackerspage.h \
-    propertiespage.h \
-    creationpage.h \
-    version.h \
-    createtorrent.h \
-    outputpage.h \
-    summarypage.h
+HEADERS  += src/wizard.h \
+    src/intropage.h \
+    src/inputpage.h \
+    src/trackerspage.h \
+    src/propertiespage.h \
+    src/creationpage.h \
+    src/version.h \
+    src/createtorrent.h \
+    src/outputpage.h \
+    src/summarypage.h
 
 FORMS += \
-    wizard.ui \
-    intropage.ui \
-    inputpage.ui \
-    trackerspage.ui \
-    propertiespage.ui \
-    creationpage.ui \
-    outputpage.ui \
-    summarypage.ui
+    src/wizard.ui \
+    src/intropage.ui \
+    src/inputpage.ui \
+    src/trackerspage.ui \
+    src/propertiespage.ui \
+    src/creationpage.ui \
+    src/outputpage.ui \
+    src/summarypage.ui
 
 LIBS += -lboost_system -ltorrent-rasterbar -lboost_filesystem
 
 OTHER_FILES += \
-    readme.md \
     README.md \
     CHANGELOG.md \
     LICENSE
